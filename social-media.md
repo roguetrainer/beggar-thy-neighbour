@@ -1,8 +1,8 @@
 ## Final
 
 🙄 IT'S THE ECONOMIC ACCOUNTING IDENTITY, STUPID! 📉
-🪖 Are Trade Wars Actually Just Domestic Class Wars? 🤔
 🌍 BEGGAR-THY-NEIGHBOUR: Robinson, Pettis & Klein on Global Imbalances ⚖️
+🪖 Are Trade Wars Actually Just Domestic Class Wars? ç
 
 We love to blame trade wars on geopolitics, tariffs, or "unfair" practices. But Michael Pettis and Matthew Klein argue that the real culprit is much simpler - and much harder to fix.
 
@@ -10,13 +10,15 @@ It comes down to one equation:
         CA = S - I
 (Current Account = Savings - Investment).
 
-When surplus nations suppress consumption to boost savings, those savings *must* go somewhere. The deficit nations don't have a choice but to absorb them.
+When surplus nations suppress consumption to boost savings, those savings *must* go somewhere. The deficit nations don't have a choice but to absorb them. Do the math.
 
-If a country creates policies that force up domestic savings (by suppressing worker wages), it *mathematically* must export that excess capital. And the rest of the world *mathematically* must absorb it.
+If a country creates policies that force up domestic savings (by suppressing worker wages), it *arithmetically* must export that excess capital. And the rest of the world *arithmetically* must absorb it.
 
-Joan Robinson realized that because the world is a closed economy, one nation's surplus is mathematically another's deficit—meaning you cannot cure your own stagnation without 'beggaring' your neighbour. Indeed, she was one of the primary architects of that logic. As a key member of the "Cambridge Circus" — the group of economists who helped John Maynard Keynes critique and refine The General Theory — she was instrumental in defining exactly how these macro-accounting identities work.
+Joan Robinson realized that because the world is a closed economy, one nation's surplus is mathematically another's deficit — meaning you cannot cure your own stagnation without 'beggaring' your neighbour. Indeed, she was one of the primary architects of that logic. As a key member of the "Cambridge Circus" — the group of economists who helped John Maynard Keynes critique and refine The General Theory — she was instrumental in defining exactly how these macro-accounting identities work.
 
 If you want to see this mechanism in action, try the repo "beggar-thy-neighbour" to visualize it - scripts pull World Bank data to plot the period during which the "savings glut" formed and how it mirrors the US deficit.
+
+🤔 Are we ready for the great rebalancing? ⚖️
 
 🔗 https://github.com/roguetrainer/beggar-thy-neighbour
 

@@ -7,7 +7,9 @@ Robinson has a biting, famous line about the stupidity of retaliatory tariffs:
 > "It would be just as sensible to drop rocks into our harbours because other nations have rocky coasts."
 >
 > — **Joan Robinson**
-
+---
+![Rocks](../img/Robinson-rocks.png)
+---
 
 ## 1. The Core Identity
 The analysis relies on the fundamental national accounting identity:

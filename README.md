@@ -23,6 +23,11 @@ The project name references the economic concept of [**Beggar-thy-neighbour**](h
 >
 > — **J.A. Hobson**, *Imperialism: A Study* (1902)
 
+---   
+See also: [Methodology](methodology.md).  
+
+---   
+
 ## The Thesis
 
 The project visualizes three core arguments from the book:

@@ -24,7 +24,7 @@ The project name references the economic concept of [**Beggar-thy-neighbour**](h
 > — **J.A. Hobson**, *Imperialism: A Study* (1902)
 
 ---   
-See also: [Methodology](methodology.md).  
+See also: [Methodology](./docs/methodology.md).  
 
 ---   
 

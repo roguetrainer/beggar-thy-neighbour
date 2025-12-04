@@ -2,6 +2,12 @@
 
 This document explains the economic framework used in *Trade Wars Are Class Wars* (Klein & Pettis, 2020) and how this project visualizes it using World Bank data.
 
+Robinson has a biting, famous line about the stupidity of retaliatory tariffs:
+
+> "It would be just as sensible to drop rocks into our harbours because other nations have rocky coasts."
+>
+> — **Joan Robinson**
+
 ## 1. The Core Identity
 The analysis relies on the fundamental national accounting identity:
 

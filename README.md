@@ -4,6 +4,10 @@
 
 This repository contains Python code and notebooks to reproduce the key economic arguments found in *Trade Wars Are Class Wars* by Michael Pettis and Matthew Klein. It fetches live data from the World Bank API to visualize the relationship between domestic income inequality (suppressed consumption) and global trade imbalances.
 
+---
+![TWCW](./img/Beggar-thy-neighbour.png)
+---
+
 The project name references the economic concept of [**Beggar-thy-neighbour**](https://en.wikipedia.org/wiki/Beggar_thy_neighbour), famously analyzed by Joan Robinson in her 1937 essay *"Beggar-My-Neighbour Remedies for Unemployment."* It describes a zero-sum policy where one country attempts to cure its own domestic problems (like unemployment or low growth) by running large trade surpluses, effectively "exporting" those problems to its trading partners.
 
 ## The Thesis

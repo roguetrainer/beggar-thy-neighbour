@@ -8,7 +8,6 @@ Robinson has a biting, famous line about the stupidity of retaliatory tariffs:
 >
 > — **Joan Robinson**
 
-See also: [Methodology](methodology.md)
 
 ## 1. The Core Identity
 The analysis relies on the fundamental national accounting identity:

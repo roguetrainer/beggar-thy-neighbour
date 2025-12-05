@@ -1,0 +1,65 @@
+
+# Stocks & Flows Demystified
+
+* This document explains how **Stock-Flow Consistent (SFC) models** integrate **stocks** (accumulated wealth/debt, represented by **NIIP - Net International Investment Position**) and **flows** (transactions like trade balance and interest payments) through a critical **feedback loop**: stocks generate interest flows, and flows accumulate into stocks. 
+* It clarifies that simplified international SFC models don't need domestic money creation mechanics or exchange rates because printing money doesn't fix external imbalances—it only changes the form of foreign liabilities without erasing them—and surplus nations like China and Germany actively neutralize exchange rate adjustments by recycling dollars into US Treasuries, making the standard currency adjustment mechanism ineffective in the Pettis/Klein framework.
+
+## Stocks & Flows in our examples
+
+Our two examples in the notebook [`SFC-models.ipynb`](../notebooks/SFC-models.ipynb) explicitly model **both** stocks and flows, and critically, the **feedback loop** between them. This integration is what qualifies them as Stock-Flow Consistent (SFC) models.
+
+
+Here is how they appear in the code:
+
+### 1. The Stocks (Accumulated Wealth/Debt)
+In both models, the **Stock** variable is `self.niip` (Net International Investment Position).
+* It represents the total accumulated wealth (or debt) at a specific point in time.
+* In the code: `self.niip = 0.0` (Initialization).
+
+### 2. The Flows (Transactions over a period)
+In both models, the **Flow** variables are `trade_balance`, `net_income_payment` (Interest), and `current_account`.
+* These represent the movement of money during a single year.
+* In the code: `current_account = trade_balance + net_income_payment`.
+
+### 3. The Integration (The "SFC" Constraint)
+The models are "consistent" because they mathematically link the two:
+
+1.  **Stock $\rightarrow$ Flow:** The size of the Stock determines the size of the Interest Flow.
+    * *Code:* `net_income_payment = self.niip * INTEREST_RATE`
+2.  **Flow $\rightarrow$ Stock:** The Net Flow adds to (or subtracts from) the Stock.
+    * *Code:* `self.niip = self.niip + current_account`
+
+Without both elements, the "Snowball Effect" (where interest payments overwhelm trade) would be impossible to simulate.
+
+## Money creation & currencies 
+
+Stock-Flow Consistent (SFC) models usually involve rigorous T-accounts (Matrices of Balance Sheets) ensuring that every financial asset has a corresponding liability.
+
+Here is why this simplified model still qualifies as a **Sectoral/International SFC**, and why the "missing" features (money printing and exchange rates) are actually consistent with the Pettis/Klein thesis.
+
+### 1. In what sense is this an SFC?
+It satisfies the core definition of **Stock-Flow Consistency** for the *external sector*:
+* **Stocks feed Flows:** The stock of Net International Investment Position (NIIP) generates the flow of Investment Income (Interest).
+* **Flows feed Stocks:** The Current Account flow accumulates into the NIIP stock.
+* **Global Closure:** One country's outflow is another's inflow ($\sum CA = 0$).
+
+In a full [Godley-Lavoie SFC model](https://link.springer.com/book/10.1057/9780230626546_), you would indeed track domestic money creation (Bank Loans $\rightarrow$ Deposits). However, for **international** trade analysis, we treat the entire country as a single sector. The "Money" here is **Net Foreign Assets**.
+
+### 2. "But nations can print more money..."
+This is the most common objection, but in an accounting sense, **printing money does not fix the external imbalance**.
+
+If the US Federal Reserve "prints money" (creates reserves) to pay for Chinese imports:
+1.  The US gets the goods.
+2.  China gets the US Dollars (Reserves).
+3.  **Result:** The US still has a liability (the dollars held by China are a claim on US assets). The NIIP *still* decreases.
+
+Printing money changes the *form* of the liability (from Bonds to Cash), but it does not erase the Net Foreign Liability. The only way to erase it is to run a Trade Surplus or default.
+
+### 3. "Our model does not have currency rates..."
+This is a feature, not a bug, of the Pettis/Klein framework.
+
+* **Standard Theory:** If the US prints money or runs a deficit, the Dollar should crash. This makes US exports cheaper and fixes the deficit automatically.
+* **Pettis/Klein Reality:** Surplus nations (China/Germany) actively **neutralize** exchange rate adjustments. They use their excess dollars to buy US Treasuries *regardless of the price*.
+* **The Model:** By fixing the trade balance (as a policy variable) and ignoring exchange rates, we simulate a world where **capital flows force the trade balance**, effectively paralyzing the exchange rate mechanism.
+
+***
